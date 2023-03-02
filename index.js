@@ -2,35 +2,34 @@ const express = require("express");
 const path = require("path");
 const app = express();
 const { engine } = require("express-handlebars");
-const request = require("request");
-const require = require("axios");
-//engine is a function we're bringing in
+const require = require("request");
+const axios = require("axios");
 
 //creates a port for our server
-const PORT = process.env.PORT || 5500;
+const PORT = process.env.PORT || 5501;
 
 // set middleware / use the documentation
 app.engine("handlebars", engine());
 app.set("view engine", "handlebars");
-app.set("views", "./views");
+// app.set("views", "./templates/views"); ?????
 
 //make a request API
-//X-RapidAPI-Key: da426e0863msh83991ba939afbd1p15de08jsn98dd0281f097
-const axios = require("axios");
+//api key:bfc8ea30-60c1-4103-ac32-78bf8f414848
+const encodedParams = new URLSearchParams();
+encodedParams.append("state", "North Carolina");
+encodedParams.append("apiKey", "bfc8ea30-60c1-4103-ac32-78bf8f414848");
+encodedParams.append("country", "United States");
+encodedParams.append("city", "Charlotte");
 
 const options = {
-  method: "GET",
-  url: "https://air-quality-api.p.rapidapi.com/air-quality",
-  params: {
-    city: "amsterdam",
-    country: "netherlands",
-    lat: "52.377956",
-    lon: "4.897070",
-  },
+  method: "POST",
+  url: "https://airvisualraygorodskijv1.p.rapidapi.com/getCity",
   headers: {
+    "content-type": "application/x-www-form-urlencoded",
     "X-RapidAPI-Key": "da426e0863msh83991ba939afbd1p15de08jsn98dd0281f097",
-    "X-RapidAPI-Host": "air-quality-api.p.rapidapi.com",
+    "X-RapidAPI-Host": "AirVisualraygorodskijV1.p.rapidapi.com",
   },
+  data: encodedParams,
 };
 
 axios
@@ -41,21 +40,68 @@ axios
   .catch(function (error) {
     console.error(error);
   });
+
+//set handlebar routes
+
+app.get("/hello", function (req, res) {
+  res.send("hello");
+});
+
+app.get("/", function (req, res) {
+  axios
+    .get("https://some-api.com/data")
+    .then((response) => {
+      res.render("home", { stock: response.data });
+    })
+    .catch((error) => {
+      console.log(error);
+      res.render("error");
+    });
+});
+
+app.get("/info", function (req, res) {
+  res.render("info");
+});
+
+// set static path
+app.use(express.static(path.join(__dirname, "/public")));
+
+app.listen(PORT, () => console.log("listening on " + PORT));
+
+// const express = require("express");
+// const path = require("path");
+// const app = express();
+// const { engine } = require("express-handlebars");
+// const request = require("request");
+// //engine is a function we're bringing in
+
+// //creates a port for our server
+// const PORT = process.env.PORT || 5501;
+
+// // set middleware / use the documentation
+// app.engine("handlebars", engine());
+// app.set("view engine", "handlebars");
+// app.set("views", "./views");
+
+// //make a request API
+// //api key:bfc8ea30-60c1-4103-ac32-78bf8f414848
 // const axios = require("axios");
 
+// const encodedParams = new URLSearchParams();
+// encodedParams.append("state", "North Carolina");
+// encodedParams.append("apiKey", "bfc8ea30-60c1-4103-ac32-78bf8f414848");
+// encodedParams.append("country", "United States");
+// encodedParams.append("city", "Charlotte");
+
 // const options = {
-//   method: "GET",
-//   url: "https://air-quality-api.p.rapidapi.com/air-quality/forecasts",
-//   params: {
-//     city: "Charlotte",
-//     country: "United States",
-//     lat: "35.227085",
-//     lon: "-80.843124",
-//   },
+//   method: "POST",
+//   url: "https://airvisualraygorodskijv1.p.rapidapi.com/getCity",
 //   headers: {
+//     "content-type": "application/x-www-form-urlencoded",
 //     "X-RapidAPI-Key": "da426e0863msh83991ba939afbd1p15de08jsn98dd0281f097",
-//     "X-RapidAPI-Host": "air-quality-api.p.rapidapi.com",
+//     "X-RapidAPI-Host": "AirVisualraygorodskijV1.p.rapidapi.com",
 //   },
+//   data: encodedParams,
 // };
 
 // axios
@@ -67,19 +113,19 @@ axios
 //     console.error(error);
 //   });
 
-//set handlebar routes
-app.get("/", function (req, res) {
-  call_api(function (doneAPI) {
-    res.render("home", {
-      stock: doneAPI,
-    });
-  });
-});
-app.get("/resources", function (req, res) {
-  res.render("resources");
-});
+// //set handlebar routes
+// app.get("/", function (req, res) {
+//   call_api(function (doneAPI) {
+//     res.render("home", {
+//       stock: doneAPI,
+//     });
+//   });
+// });
+// app.get("/info", function (req, res) {
+//   res.render("info");
+// });
 
-// set static path
-app.use(express.static(path.join(__dirname, "public")));
+// // set static path
+// app.use(express.static(path.join(__dirname, "public")));
 
-app.listen(PORT, () => console.log("listening on " + PORT));
+// app.listen(PORT, () => console.log("listening on " + PORT));
