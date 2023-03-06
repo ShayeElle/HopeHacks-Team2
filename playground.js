@@ -59,3 +59,20 @@
 // app.use(express.static(path.join(__dirname, "public")));
 
 // app.listen(PORT, () => console.log("listening on " + PORT));
+
+// const encodedParams = new URLSearchParams();
+// encodedParams.append("state", "North Carolina");
+// encodedParams.append("apiKey", "bfc8ea30-60c1-4103-ac32-78bf8f414848");
+// encodedParams.append("country", "Untited States");
+// encodedParams.append("city", "Charlotte");
+
+// const options = {
+//   method: "POST", in this line it should be "GET"
+//   url: "http://api.airvisual.com/v2",
+//   // headers: {
+//   //   // "content-type": "application/x-www-form-urlencoded",
+//   //   // "X-RapidAPI-Key": "da426e0863msh83991ba939afbd1p15de08jsn98dd0281f097",
+//   "X-RapidAPI-Host": "AirVisualraygorodskijV1.p.rapidapi.com",
+//   },
+//   data: encodedParams,
+// };
