@@ -15,8 +15,7 @@ app.set("views", "../templates/views");
 
 //make a request API
 //air visual api key:bfc8ea30-60c1-4103-ac32-78bf8f414848
-// const url =
-//   "https://api.airvisual.com/v2/city?city=Charlotte&state=North%20Carolina&country=USA&key=bfc8ea30-60c1-4103-ac32-78bf8f414848";
+// const url ="https://api.airvisual.com/v2/city?city=Charlotte&state=North%20Carolina&country=USA&key=bfc8ea30-60c1-4103-ac32-78bf8f414848";
 
 //lots of inconsistencies with the code below, along w the formatting. typos in previous URLv
 
@@ -67,10 +66,6 @@ app.get("/", function (req, res) {
       console.log(error);
       res.render("error");
     });
-});
-
-app.get("/info", function (req, res) {
-  res.render("info");
 });
 
 // set static path
