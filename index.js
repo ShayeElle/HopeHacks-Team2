@@ -15,8 +15,6 @@ app.set("views", "../templates/views");
 
 //make a request API
 //air visual api key:bfc8ea30-60c1-4103-ac32-78bf8f414848
-//rapidAPIkey : da426e0863msh83991ba939afbd1p15de08jsn98dd0281f097
-
 // const url =
 //   "https://api.airvisual.com/v2/city?city=Charlotte&state=North%20Carolina&country=USA&key=bfc8ea30-60c1-4103-ac32-78bf8f414848";
 
