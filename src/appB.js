@@ -97,9 +97,9 @@ axios
   });
 
 const url = new URL("http://api.airvisual.com/v2/city");
-url.searchParams.set("city", "");
-url.searchParams.set("state", "");
-url.searchParams.set("country", "");
+url.searchParams.set("city", "Charlotte");
+url.searchParams.set("state", "North Carolina");
+url.searchParams.set("country", "USA");
 url.searchParams.set("key", "bfc8ea30-60c1-4103-ac32-78bf8f414848");
 
 console.log(url);
@@ -119,19 +119,19 @@ app.get("/hello", function (req, res) {
   res.send("hello");
 });
 
-app.get("/", function (req, res) {
-  axios
-    .get("https://some-api.com/data")
-    .then((response) => {
-      res.render("home", {
-        stock: response.data,
-      });
-    })
-    .catch((error) => {
-      console.log(error);
-      res.render("error");
-    });
-});
+// app.get("/", function (req, res) {
+//   axios
+//     .get("https://some-api.com/data")
+//     .then((response) => {
+//       res.render("home", {
+//         stock: response.data,
+//       });
+//     })
+//     .catch((error) => {
+//       console.log(error);
+//       res.render("error");
+//     });
+// });
 
 //404 routes
 // app.get('/404/*', (req,res) => {
