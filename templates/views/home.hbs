@@ -1,0 +1,113 @@
+ <html>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="/css/homepage.css" rel="stylesheet" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    {{>header}}
+    <section class="header">
+        <div class="box-shadow">
+            <h1>AIR POLLUTION</h1>
+            <p>Lend a hand and save our atmosphere. Stop air pollution.</p>
+        </div>
+    </section>
+
+    <section class="about-ap">
+        <p>Air pollution is contamination of the indoor or outdoor environment by any chemical, physical or biological agent that modifies the natural characteristics of the atmosphere.</p>
+        <p>Household combustion devices, motor vehicles, industrial facilities and forest fires are common sources of air pollution. Pollutants of major public health concern include particulate matter, carbon monoxide, ozone, nitrogen dioxide and sulfur dioxide. Outdoor and indoor air pollution cause respiratory and other diseases and are important sources of morbidity and mortality.</p>
+        <img src="img/World_Health_Organization_Logo.svg.png" alt="World-Health-Organization-Logo"></img>
+    </section>
+
+    <section class="app-container">
+        <h1>Monitoring air pollution levels has become very important to detect pollution peaks, better control air pollution and eventually improve air quality.</h1>
+        <div>
+            <h2>How is Air Quality Measured?</h2>
+            <p>With measuring devices using laser-based technologies, chemiluminescence, flame ionization, etc. These devices are, for instance, located close to the traffic, far from the traffic and close to industrial zones. All the collected data are compiled into a value scale, called the Air Quality Index (AQI).</p>
+        </div>
+        <div>
+            <form class="app">
+                <h2>Search the air quality for your location</h2>
+                <input placeholder="Location">
+                <button>Search</button>
+            </form>
+        </div>
+        {{!-- <p id="message-1"></p>
+        <p id="message-2"></p> --}}
+    </section>
+
+    <section class="aqi-index">
+        <img src="img/home-aqi-index.png" alt="aqi-index">
+    </section>
+
+    <section class="plant-tree">
+        <div class="plant">
+            <img src="img/home-plant-tree.jpeg" alt="plant">
+        </div>
+        <div class="plant-tree-text">
+            <h2>How do trees clean our air?</h2>
+            <p>Trees play an important role in dispersing and removing pollutants such as carbon dioxide (CO2), nitrogen dioxide (NO2) and particulate matter (PM) from the atmosphere.</p>
+        </div>
+    </section>
+
+    <section class="ap-video">
+        <div class="ap-video-header">
+            <img src="img/home-neograph-logo.png" alt="national-geographic-logo">
+            <h2>Air Pollution 101</h2>
+        </div>
+        <video controls>
+            <source src="https://res.cloudinary.com/dtpgi0zck/video/upload/q_auto/vc_vp9/v1/videos/Air%20Pollution%20101.webm?_s=vp-1.9.7" type="video/mp4" alt="pollution-video">
+        </video>
+    </section>
+
+    <section class="ap-causes">
+        <h2>CAUSES OF AIR POLLUTION</h2>
+        <div class="ap-causes-text">
+            <div>
+                <h3>1. The Burning of Fossil Fuels</h3>
+                <p>Most of the air pollution takes place due to the incomplete burning of fossil fuels. These include coal, oil, and gasoline to produce energy for electricity or transportation. </p>
+    
+                <h3>2. Industrial Emission </h3>
+                <p>Industrial activities emit several pollutants in the air that affect the air quality more than we can even imagine. Huge amounts of organic chemicals like CO2, hydrocarbons, etc. are released by the industries including other toxicants.</p>
+    
+                <h3>3. Indoor Air Pollution</h3>
+                <p>Use of toxic products also called Volatile Organic Compounds (VOCs), inadequate ventilation, uneven temperature, and humidity level can cause indoor air pollution, whether you are in an office, school, or at your comfortable home.</p>
+    
+                <h3>4. Wildfires </h3>
+                <p>Climate change is not just increasing wildfire but also spiking air pollution. The soot and dust particles, smoke (that contains several toxic chemicals) can stay suspended in the air for days.</p>
+    
+                <h3>5. Microbial Decaying Process</h3>
+                <p>Decaying process releases carbon, methane, and nitrogen that can affect the quality of air to some extent.</p>
+            </div>
+    
+            <div>
+                <h3>6. Transportation</h3>
+                <p>When the car burns gasoline, it emits pollutants in the air. When vehicle pollution is high in the atmosphere, it creates a hole in the ozone layer contributing to smog and causing various health issues.</p>
+    
+                <h3>7. Open Burning of Garbage Waste</h3>
+                <p>Open air garbage burning releases toxins such as black carbon, soot, and carcinogens. It actively contributes to the greenhouse effect, and in turn to climate change.</p>
+    
+                <h3>8. Construction and Demolition</h3>
+                <p>Several construction sites and raw materials such as bricks and concrete cause haze and foul air which is hazardous for people especially, children and elderly citizens.</p>
+    
+                <h3>9. Agricultural Activities</h3>
+                <p>Agricultural activities have had a serious impact on the decreasing air quality. Pesticides and fertilizers are the main sources that contaminate the surrounding air. </p>
+    
+                <h3>10. Use of chemical and synthetic products</h3>
+                <p>Household products cause indoor air pollution which is 10 times more harmful than outdoor air pollution. The vast variety of sources indoors release various harmful toxins that affect children, old age people, and even pets.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="news-updates-container"> 
+        <h4>Stay updated on recent air quality news</h4>
+               <img src="img/home-sd-logo.png" alt="science-daily-logo">      
+               <h5> ScienceDaily features breaking news about the latest discoveries in science, health, the environment, technology, and more -- from leading universities, scientific journals, and research organizations.</h5>
+               <a href='https://www.sciencedaily.com/news/earth_climate/air_quality/' target="_blank"><button>BROWSE NEWS</button></a>    
+    </section>
+    {{>footer}}
+       <script src="/js/index.js" ></script>
+</body>
+</html>
+</html>
