@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    max-width: 100vw;
+    background-image: url('/img/about-banner.avif');
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+}
+.banner {
+    width: 100%;
+    height: 400px;
+    background-image: url('/img/about-banner.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+.mission, .about-description, .inform {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: white;
+}
+.mission-text, .about-text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.mission-text h3, .about-text h3, .inform h3, .recom {
+    font-size: 20px;
+}
+.mission-text p, .about-text p, .inform p, .inform-text ul li {
+    width: 35vw;
+    font-size: 15px;
+}
+.inform-text ul {
+    padding-left: 0;
+}
+.teams, .phone-service, .air-quality-cause {
+    width: 35vw;
+}
+.team-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.team {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 35vh;
+}
+.team-member {
+    background: rgba(255, 255, 255, 0.811);
+    padding: 20px;
+    margin: 5px;
+    height: 25vh;
+}
+.team-member h3 {
+    text-align: center;
+}
+.values-container {
+    background: white;
+    padding: 20px;
+    height: 50vh;
+}
+.value-header {
+    text-align: center;
+    font-size: 25px;
+    margin: 0;
+}
+.value-cards {
+    height: 45vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.value-card {
+    padding: 10px;
+    background: #5CB3C1;
+    color: #000;
+    width: 20%;
+}
+.value-card h4, .value-card p {
+    text-align: center;
+}
+.aqi-message {
+    height: 20vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+.aqi-message p {
+    font-size: 45px;
+    color: #fff;
+}
+.sources-link {
+    color: #5CB3C1;
+}
+.sources-link:hover {
+    color: rgb(22, 117, 103);
+}
+/* Mobile Responsiveness */
+@media only screen and (min-width: 300px) and (max-width: 767px){
+    .banner {
+        font-size: 15px;
+    }
+    .mission-text h3, .about-text h3, .inform-text h3, .recom {
+        font-size: 12px;
+    }
+    .mission-text p, .about-text p, .inform-text p, .inform-text ul li {
+        font-size: 6px;
+        text-align: left;
+    }
+    .value-card h4, .value-card p {
+        text-align: center;
+        font-size: 8px;
+    }
+    .aqi-message p {
+        font-size: 12px;
+    }
+    .teams, .phone-service, .air-quality-cause {
+        width: 50vw;
+    }
+    .team {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        margin: 10px;
+        height: 70vh;
+    }
+    .team-member h3, p {
+        font-size: 8px;
+        text-align: center;
+    }
+    .aqi-causes {
+        padding-left: 5px;
+    }
+    footer {
+        margin: 0;
+        width: auto;
+    }
+    .footer-container .socials i {
+        width: 15px;
+        height: 15px;
+        margin-top: 5px;
+        border: 1px solid #fff;
+        border-radius: 4px;
+    }
+    .footer-container .title, .footer-container p, .footer-container ul li, #copyrightYear {
+        font-size: 8px;
+    }
+}
+/* Tablet Responsiveness */
+@media only screen and (min-width: 768px) and (max-width: 992px){
+    .aqi-message p {
+        font-size: 25px;
+    }
+    .mission-text h3, .about-text h3, .inform-text h3, .recom {
+        font-size: 15px;
+    }
+    .mission-text p, .about-text p, .inform-text p, .inform-text ul li {
+        font-size: 12px;
+    }
+    .team {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        margin: 10px;
+        height: 70vh;
+    }
+}
+/* Desktop Responsiveness */
+@media only screen and (min-width: 1024px) {
+    .team {
+        margin: 10px;
+    }
+}
