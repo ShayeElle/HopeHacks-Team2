@@ -26,19 +26,30 @@
             <h2>How is Air Quality Measured?</h2>
             <p>With measuring devices using laser-based technologies, chemiluminescence, flame ionization, etc. These devices are, for instance, located close to the traffic, far from the traffic and close to industrial zones. All the collected data are compiled into a value scale, called the Air Quality Index (AQI).</p>
         </div>
-        <div>
-            <form class="app">
-                <h2>Search the air quality for your location</h2>
-                <input placeholder="Location">
-                <button>Search</button>
-            </form>
-        </div>
-        {{!-- <p id="message-1"></p>
-        <p id="message-2"></p> --}}
+        <form>
+  <label for="city">City:</label>
+  <br>
+  <input type="text" id="city" name="city" required>
+<br>
+  <label for="state">State:</label>
+  <br>
+  <input type="text" id="state" name="state" required>
+<br>
+  <label for="country">Country:</label>
+  <br>
+  <input type="text" id="country" name="country" required>
+<br>
+  <button type="submit">Get Air Quality</button>
+</form>
+<div id="results"></div>
+<div>
+  <p id="message-1"></p>
+  <p id="message-2"></p>
+</div>
     </section>
 
     <section class="aqi-index">
-        <img src="img/home-aqi-index.png" alt="aqi-index">
+        <img src="/img/AQIchart.png" alt="aqi-index">
     </section>
 
     <section class="plant-tree">
@@ -108,6 +119,39 @@
     </section>
     {{>footer}}
        <script src="/js/footer.js"></script>
+       <script>
+       const airForm = document.querySelector("form");
+const cityInput = document.querySelector("#city");
+const stateInput = document.querySelector("#state");
+const countryInput = document.querySelector("#country");
+const messageOne = document.querySelector("#message-1");
+const messageTwo = document.querySelector("#message-2");
+
+airForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const city = cityInput.value;
+  const state = stateInput.value;
+  const country = countryInput.value;
+
+  messageOne.textContent = "Loading...";
+  messageTwo.textContent = "";
+
+  fetch(
+    `http://api.airvisual.com/v2/city?city=${city}&state=${state}&country=${country}&key=bfc8ea30-60c1-4103-ac32-78bf8f414848`
+  ).then((response) => {
+    response.json().then((data) => {
+      if (data.status === "fail") {
+        messageOne.textContent = data.data.message;
+      } else {
+        messageOne.textContent = `Air quality in ${data.data.city} (${data.data.state}, ${data.data.country})`;
+        messageTwo.textContent = `AQI: ${data.data.current.pollution.aqius} (${data.data.current.pollution.mainus}), Temperature: ${data.data.current.weather.tp}°C, Humidity: ${data.data.current.weather.hu}%`;
+      }
+    });
+  });
+});
+</script>
+
 </body>
 </html>
 </html>

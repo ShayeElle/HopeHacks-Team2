@@ -1,30 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
 /* navbar  */
 
-.navbar-container{
-    background-color: white;
+.navbar-container {
+  background-color: white;
 }
-.container-fluid{
-    font-size: 30px !important;
-  }
-  .navbar-brand{
-    font-size: 30px !important;
-    color: #5CB3C1 !important;
-  }
-  .nav-item a:hover{
-    background-color: #5CB3C1;
-    color: #fff !important;
-  }
-  .container-fluid a:hover{
-    background-color: #5CB3C1;
-    color: #fff !important;
-  }
-  .container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
-    border-radius: 20px;
-  }
+.container-fluid {
+  font-size: 30px !important;
+}
+.navbar-brand {
+  font-size: 30px !important;
+  color: #5cb3c1 !important;
+}
+.nav-item a:hover {
+  background-color: #5cb3c1;
+  color: #fff !important;
+}
+.container-fluid a:hover {
+  background-color: #5cb3c1;
+  color: #fff !important;
+}
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  border-radius: 20px;
+}
