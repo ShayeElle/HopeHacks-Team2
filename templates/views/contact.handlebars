@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="contact.css">
     <script src="https://kit.fontawesome.com/85ed0426cf.js" crossorigin="anonymous"></script>
-    <title>Contact Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Document</title>
 </head>
-<!-- Header / NavBar -->
+
+
 <body>
-    {{>header}}
+     {{>header}}
 <!-- Contact Form and Information -->
-     <main class="contact">
+    <main class="contact">
             <h2> SUBSCRIBE TODAY! </h2>
             <p class="subText"> Stay informed so you can stay involved</p>
         <div class="container">
@@ -24,7 +26,7 @@
                 </div>
                 <div class="box">
                     <div class="icon"><i class="fa-solid fa-envelope"></i></div>
-                       <div class="text">
+                        <div class="text">
                             <h3>Email</h3>
                             <p> Contact@HonestAQ.com</p>
                         </div>
@@ -309,7 +311,7 @@
                             <option value="YE">Yemen</option>
                             <option value="ZM">Zambia</option>
                             <option value="ZW">Zimbabwe</option>
-                        </select>
+                        </select> 
                     </div>
                     <div class="inputBox">
                         <textarea required="required"></textarea>
@@ -322,16 +324,21 @@
         </div>
     </main>
     <article>
-        <h2> Let's protect and enjoy our natural world together. Check out some resources!</h2>
-             <a href="/resources"><button > Learn More! </button></a>
-</article>
+        <h2> Let’s protect and enjoy our natural world together. Check out some resources!</h2>
+            <button onclick=""> Learn More! </button>
+    </article>
     <section>
         <video id="background-video" autoplay loop muted>
             <source src="img/contact-clouds.mp4" type="video/mp4" alt="Moving clouds">
         </video>
-        <h3> "BE NICE TO THE AIR,<br><span> WE ALL HAVE TO SHARE"</span></h3>
-    </section> 
-    {{!-- {{>footer}} --}}
-       <script src="/js/index.js" ></script>
+        <h3> "BE NICE TO THE AIR,<br><span> WE ALL HAVE TO SHARE"</span></h3>      
+    </section>
+
+
+
+
+
+<script src="index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
