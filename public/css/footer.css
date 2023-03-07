@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins&display=swap');
+
+footer {
+    padding-bottom: 5px;
+    margin: 0;
+    background-color: #608499;
+    max-width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #eee;
+    height: 18vh;
+    color: #fff;
+}
+.footer-container .title, #copyrightYear {
+    text-align: center;
+}
+.footer-container .socials {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.footer-container .socials i {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    margin-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-container .socials a {
+    text-decoration: none;
+    color: #fff;
+}
+.footer-container .socials i:hover, .footer-container .socials a:hover {
+    color: #5CB3C1;
+    border-color: #5CB3C1;
+}
+.footer-container .title, .footer-container p, .footer-container ul li, #copyrightYear {
+    font-size: 12px;
+}
+#copyrightYear {
+    color: #fff;
+}
