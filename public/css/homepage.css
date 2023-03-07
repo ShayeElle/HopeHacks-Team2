@@ -60,7 +60,7 @@ body {
   align-content: stretch;
   padding: 200px;
   color: rgb(26, 26, 26);
-  padding-bottom: 500px;
+  /* padding-bottom: 500px; */
   text-align: center;
   margin-left: 100px;
   margin-right: 100px;
@@ -118,7 +118,7 @@ body {
   margin-bottom: 50px;
 }
 .aqi-index img {
-  width: 70%;
+  width: 50%;
 }
 
 .plant-tree {
