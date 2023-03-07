@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins&display=swap');
+
+*{
+    box-sizing: border-box;
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}  
+
+.header{
+    background-image: url('/img/res-hero-img.jpeg');
+    background-attachment: fixed;
+    background-size: cover;
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding:150px 200px;
+    margin: 10px;
+    letter-spacing: 2px;
+    font-size: 20px;
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    font-style: bold;
+}  
+
+/* info section */
+.res-info-container{
+    background-color:  #608499;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.info{
+    background-color: #608499;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1, 1fr);
+    justify-items: center;
+    padding: 50px;
+}
+
+.info-video{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column; 
+    align-content: stretch;
+}
+
+.info-text{
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    align-content: stretch;
+    color:white;
+    padding: 30px;
+}
+
+.info-text h2{
+   text-align: center;
+   letter-spacing: 1px;
+   font-size: 20px;
+   font-weight: bold;
+   margin-bottom: 30px;
+}
+
+.info-text p{
+    text-align: center;
+    font-size: 15px;
+}
+
+.info-text button{
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    background-color: #5CB3C1;
+    color: white;
+    border-radius: 3px;
+}
+
+.info-text button:hover{
+    background-color: white;
+    color: rgb(26, 25, 25);
+}
+
+/* get-involved */
+.res-getInvolved-container{
+    background-color: rgb(255, 255, 255);
+}
+
+.res-getInvolved-header{
+    background-image: url('/img/res-solutions.jpeg');
+    background-attachment: static;
+    background-size: cover;
+    height: 300px;
+    margin: 10px;
+}
+
+.res-getInvolved-container h3{
+    color: rgb(56, 52, 52);
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 1px;
+}
+
+.solutions{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    margin: 30px;
+}
+
+.solutions-text{
+   margin: 30px;
+   text-align: center;
+   color: rgb(56, 52, 52);
+}
+
+.solutions-text img{
+    margin-left: 50px;
+}
+
+.quote-container h3{
+    background-image: url('/img/res-hero-img.jpeg');
+    background-attachment: fixed;
+    background-size: cover;
+    height: 300px;
+    margin: 10px;
+    padding: 125px;
+    text-align: center;
+    color: white;
+}
+
+/* related articles */
+.res-resources-container{
+    background-color: rgb(255, 255, 255);
+}
+
+.res-resources-container h3{
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+.resources{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    margin: 10px 30px;
+}
+
+.articles:hover{
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: 1s ease;
+}
+
+.articles{
+    background-color: rgb(26, 26, 26);
+    margin-bottom: 30px;
+    text-align: left;
+    color: white;
+    margin: 10px 30px;
+    padding-bottom: 30px;
+    margin-bottom: 50px;
+}
+
+.articles img{
+    width: 100%;
+}
+
+.articles h4{
+    margin-top: 10px;
+    font-size: 15px;
+    padding-left: 20px;
+    color: gray;
+}
+
+.articles p{
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size:12px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.articles a{
+text-decoration: none;
+font-size: 15px;
+padding-left: 20px;
+padding-right: 20px;
+color: white;
+text-align: left;
+display: block;
+}
+
+.articles a:hover{
+    text-decoration: underline;
+    color: #5CB3C1;
+    font-style: bold;
+}
