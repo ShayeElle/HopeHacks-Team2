@@ -9,6 +9,7 @@
     "mysql2": "^3.2.0",
     "nodemon": "^2.0.20",
     "postman-request": "^2.88.1-postman.32",
+    "promise": "^8.3.0",
     "request": "^2.88.2"
   },
   "name": "hopehacks-team2",
