@@ -60,10 +60,11 @@ body {
 .air-quality-cause {
   width: 35vw;
 }
-.team-header {
+.team-cont .team-header {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #fff;
 }
 .team {
   display: grid;
@@ -124,6 +125,26 @@ body {
 .sources-link:hover {
   color: rgb(22, 117, 103);
 }
+.team-grid{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 15px;
+}
+.team-cont ul li {
+  list-style: none;
+}
+.team-cont h3 {
+  color: #eee;
+}
+.team-grid img{
+  height: 90%;
+  width: 100%;
+}
+.team-item{
+  flex: 1;
+  margin: 10px;
+} 
 /* Mobile Responsiveness */
 @media only screen and (min-width: 300px) and (max-width: 767px) {
   .banner {
