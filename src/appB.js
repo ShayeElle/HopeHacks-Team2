@@ -60,36 +60,36 @@ app.get("/resources", (req, res) => {
 
 //lots of inconsistencies with the code below, along w the formatting. typos in previous URLv
 
-const url2 = new URL("http://api.airvisual.com/v2/nearest_city");
-url2.searchParams.set("key", "bfc8ea30-60c1-4103-ac32-78bf8f414848");
+// const url2 = new URL("http://api.airvisual.com/v2/nearest_city");
+// url2.searchParams.set("key", "bfc8ea30-60c1-4103-ac32-78bf8f414848");
 
-console.log(url2);
+// console.log(url2);
 
-axios
-  .get(url2)
-  .then(function (response) {
-    console.log(response.data.data);
-  })
-  .catch(function (error) {
-    console.error(error);
-  });
+// axios
+//   .get(url2)
+//   .then(function (response) {
+//     console.log(response.data.data);
+//   })
+//   .catch(function (error) {
+//     console.error(error);
+//   });
 
-const url = new URL("http://api.airvisual.com/v2/city");
-url.searchParams.set("city", "Charlotte");
-url.searchParams.set("state", "North Carolina");
-url.searchParams.set("country", "USA");
-url.searchParams.set("key", "bfc8ea30-60c1-4103-ac32-78bf8f414848");
+// const url = new URL("http://api.airvisual.com/v2/city");
+// url.searchParams.set("city", "Charlotte");
+// url.searchParams.set("state", "North Carolina");
+// url.searchParams.set("country", "USA");
+// url.searchParams.set("key", "bfc8ea30-60c1-4103-ac32-78bf8f414848");
 
-console.log(url);
+// console.log(url);
 
-axios
-  .get(url)
-  .then(function (response) {
-    console.log(response.data.data); //shows full results, not [object]
-  })
-  .catch(function (error) {
-    console.error(error);
-  });
+// axios
+//   .get(url)
+//   .then(function (response) {
+//     console.log(response.data.data); //shows full results, not [object]
+//   })
+//   .catch(function (error) {
+//     console.error(error);
+//   });
 
 //set handlebar routes
 

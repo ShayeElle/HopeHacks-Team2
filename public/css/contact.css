@@ -1,54 +1,56 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,400;0,500;1,100;1,200;1,300;1,400&family=Unbounded:wght@200;300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,400;0,500;1,100;1,200;1,300;1,400&family=Unbounded:wght@200;300;400;500;600;700&display=swap');
 
 * {
-  /* box-sizing: border-box; */
-  margin: 0;
-  padding: 0;
-  font-family: "Poppins", sans-serif;
+    /* box-sizing: border-box; */
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
   background: #ffffff;
 }
 
-.container-fluid {
+.container-fluid{
   font-size: 30px !important;
+
 }
 
-.navbar-brand {
+.navbar-brand{
   font-size: 30px !important;
   color: #5cb3c1 !important;
 }
 
-.nav-item a:hover {
+.nav-item a:hover{
   background-color: #5cb3c1;
   color: #fff !important;
 }
 
-.container-fluid a:hover {
+.container-fluid a:hover{
   background-color: #5cb3c1;
   color: #fff !important;
 }
 
 /*---- Contact/Sub ----*/
 
-main h2 {
+main h2{
   color: #fff;
   font-size: 70px;
   text-align: center;
   padding: 10px;
   margin: 10px;
-}
+  }
 
-.subText {
+.subText{
   color: #608499;
   font-size: 30px;
   padding: 5px 10px;
   border-radius: 15px;
   background-color: rgba(255, 255, 255, 0.805);
-}
+  }
 
-.contact {
+
+.contact{
   position: relative;
   /* min-height: 80vh; */
   height: 1200px !important;
@@ -59,10 +61,12 @@ main h2 {
   align-items: center;
   flex-direction: column;
   overflow: hidden;
-  background-image: url("/img/contact-hero.jpg");
+  background-image: url('/img/contact-hero.jpg');
   background-attachment: fixed;
   background-size: cover;
+ 
 }
+
 
 .container {
   width: 100%;
@@ -81,7 +85,7 @@ main h2 {
   flex-direction: column;
 }
 
-.contactInfo h2 {
+.contactInfo h2{
   color: #608499;
   font-size: 40px;
   font-weight: 600;
@@ -100,7 +104,7 @@ main h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50%;
+  border-radius: 50%; 
   font-size: 22px;
   color: #ffffff;
 }
@@ -110,31 +114,31 @@ main h2 {
   margin-left: 20px;
   font-size: 20px;
   color: rgb(42, 42, 42);
-  flex-direction: column;
+  flex-direction:column;
   font-weight: 400;
   font-style: italic;
 }
 
 .container .contactInfo .box .text h3 {
-  font-weight: 600;
-  color: #608499;
+font-weight: 600;
+color: #608499;
 }
 
-.contactForm {
+.contactForm{
   width: 40%;
   padding: 30px 40px;
   background: #608499;
 }
 
-.contactForm h2 {
+.contactForm h2{
   font-size: 30px;
-  color: #ffffff;
+  color:#ffffff;
   font-weight: 600;
 }
 
-.contactForm p {
+.contactForm p{
   font-size: 20px;
-  color: #ffffff;
+  color:#ffffff;
   font-weight: 400;
   text-align: center;
 }
@@ -157,7 +161,7 @@ main h2 {
   resize: none;
 }
 
-.contactForm .inputBox span {
+.contactForm .inputBox span{
   position: absolute;
   left: 0;
   padding: 5px 2px;
@@ -172,35 +176,35 @@ main h2 {
 .contactForm .inputBox input:focus ~ span,
 .contactForm .inputBox input:valid ~ span,
 .contactForm .inputBox textarea:focus ~ span,
-.contactForm .inputBox textarea:valid ~ span {
-  color: #5cb3c1;
-  font-size: 15px;
-  transform: translateY(-25px);
+.contactForm .inputBox textarea:valid ~ span{
+color:#5cb3c1;
+font-size: 15px;
+transform: translateY(-25px);
 }
 
-.contactForm .inputBox label {
+.contactForm .inputBox label{
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 500; 
   color: #fff;
 }
 
-.contactForm .inputBox select {
+.contactForm .inputBox select{
   background-color: #5cb3c1;
   color: #fff;
   padding: 10px;
 }
-.contactForm .inputBox input[type="submit"] {
-  width: 150px;
-  background: #5cb3c1;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  padding: 10px;
-  font-size: 20px;
+.contactForm .inputBox input[type="submit"]{
+width: 150px;
+background: #5cb3c1;
+color: #fff;
+border: none;
+cursor: pointer;
+padding: 10px;
+font-size: 20px;
 }
 
 /* --- Article ---- */
-article {
+article{
   height: 40vh;
   display: flex;
   justify-content: center;
@@ -208,7 +212,7 @@ article {
   flex-direction: column;
 }
 
-article h2 {
+article h2{
   font-weight: 600;
   margin-bottom: 30px;
   color: #4e7287;
@@ -228,14 +232,14 @@ article button {
 }
 /*----- Quote -----*/
 
-section {
+section{
   position: absolute;
   width: 100%;
   height: 50vh;
   overflow: hidden;
 }
 
-section video {
+section video{
   position: absolute;
   top: 0;
   left: 0;
@@ -244,7 +248,7 @@ section video {
   object-fit: cover;
   overflow: hidden;
 }
-section h3 {
+section h3{
   position: absolute;
   top: 0;
   left: 0;
@@ -264,95 +268,109 @@ section h3 {
   mix-blend-mode: multiply;
 }
 
-section h3 span {
+section h3 span{
   font-size: 0.5em;
   line-height: 0.85em;
-  margin-top: 10px;
+  margin-top: 10px; 
 }
+
 
 /* rgba(0, 0, 0, 0.927) */
 
 /*---- Responsive ----*/
 
+
 /*--- Small Mobile -----*/
-@media screen and (min-width: 320px) and (max-width: 480px) {
-  header img {
+@media screen and (min-width: 320px) and (max-width: 480px){
+ 
+
+  header img{
     height: 50%;
     width: 40vh;
   }
 
-  .container {
+  .container{
     overflow-x: hidden;
+    
   }
   .container .contactInfo .box .text {
     font-size: 10px;
   }
 
-  .container .contactInfo {
-    padding-top: 20px;
-  }
+.container .contactInfo {
+  padding-top: 20px;
+  
+}
 
   .contactInfo {
     padding-top: 10px;
+  
   }
-  main h2 {
+  main h2{
     font-size: 50px;
     padding-top: 20px;
+    }
+main p{
+  font-size: 10px;
+  text-align: center;
+}
+    article h2{
+      font-size: 20px;
+    }
+  
   }
-  main p {
-    font-size: 10px;
-    text-align: center;
-  }
-  article h2 {
-    font-size: 20px;
-  }
+  
+  /* ---------- tablets ----------- */
+  @media screen and (min-width: 480px) and (max-width: 990px){
+ 
+    header img{
+      height: 50%;
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .subText{
+      text-align: center;
+    }
+    main h2{
+      font-size: 4em;
+      padding: 5px;
+      }
+
+    .subText{
+      font-size: 15px
+    };
+    article{
+      margin: 10px;
+    }
+    article h2{
+      font-size: 20px;
+    }
+    button{
+      font-size: 10px;
+      margin-bottom: 10px;
+    }
 }
 
-/* ---------- tablets ----------- */
-@media screen and (min-width: 480px) and (max-width: 990px) {
-  header img {
-    height: 50%;
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  .subText {
-    text-align: center;
-  }
-  main h2 {
-    font-size: 4em;
-    padding: 5px;
-  }
 
-  .subText {
-    font-size: 15px;
-  }
-  article {
-    margin: 10px;
-  }
-  article h2 {
-    font-size: 20px;
-  }
-  button {
-    font-size: 10px;
-    margin-bottom: 10px;
-  }
-}
 
-@media (max-width: 991px) {
-  .contact {
-    padding: 50px;
+  @media (max-width:991px){
+    .contact{
+      padding: 50px;
+    }
+    .container{
+      flex-direction: column;
+    }
+    .container .contactInfo{
+      margin-bottom: 40px;
+    }
+    .container .contactInfo,
+    .container .contactForm{
+      width: 100%;
+    }
   }
-  .container {
-    flex-direction: column;
-  }
-  .container .contactInfo {
-    margin-bottom: 40px;
-  }
-  .container .contactInfo,
-  .container .contactForm {
-    width: 100%;
-  }
-}
+  
+  
+  
