@@ -20,6 +20,10 @@ There are four pages on our website: Home, About, Resources, and Contact. Our ap
 
 ## API
 IQAir AirVisual
+Link to main site : https://www.iqair.com/
+Link to dashboard(here is where you access your API) : https://www.iqair.com/dashboard 
+HTTPS support : https://api-docs.iqair.com/?version=latest#https-support
+Sample raw data for specified city : https://api.airvisual.com/v2/city?city=Charlotte&state=North%20Carolina&country=USA&key=bfc8ea30-60c1-4103-ac32-78bf8f414848
 
 ## How To Get Started
 Fork this repo into your local machine
