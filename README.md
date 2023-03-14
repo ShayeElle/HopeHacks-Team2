@@ -29,8 +29,7 @@ IQAir AirVisual
 Fork this repo into your local machine
 
 ## How To Run The Server
-* npm install express
-* npm install hbs
+* npm install - To download and install all of the packages and dependencies into the project
 * cd src
 * node appB.js
 
