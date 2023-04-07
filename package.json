@@ -5,14 +5,12 @@
     "exphbs": "^1.2.0",
     "express": "^4.18.2",
     "express-handlebars": "^6.0.7",
-    "gh-pages": "^5.0.0",
     "hbs": "^4.2.0",
     "mysql2": "^3.2.0",
     "nodemon": "^2.0.20",
     "postman-request": "^2.88.1-postman.32",
     "request": "^2.88.2"
   },
-  "homepage": "https://ShayeElle.github.io/HopeHacks-Team2",
   "name": "hopehacks-team2",
   "description": "",
   "version": "1.0.0",
@@ -33,5 +31,6 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ShayeElle/HopeHacks-Team2/issues"
-  }
+  },
+  "homepage": "https://github.com/ShayeElle/HopeHacks-Team2#readme"
 }
