@@ -80,6 +80,11 @@ body {
 .team-member h3 {
   text-align: center;
 }
+
+.team-item img {
+  object-fit: contain;
+}
+
 .values-container {
   background: white;
   padding: 20px;
